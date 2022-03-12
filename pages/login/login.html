@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script type="module" src="login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.js"></script>
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <link rel="stylesheet" href="../../styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-background-image"></div>
+      <form class="form" id="form">
+        <h2>Delivery</h2>
+        <div class="input">
+          <label for="email">E-mail</label>
+          <input
+            value="user@user.com"
+            type="email"
+            name="email"
+            id="form-input-email"
+            class="form-input"
+          />
+          <span id="form-input-helpertext-email" class="form-helper-text" />
+        </div>
+        <div class="input">
+          <label for="password">Password</label>
+          <input
+            value="1234"
+            type="password"
+            name="password"
+            id="form-input-password"
+            class="form-input"
+          />
+          <span id="form-input-helpertext-password" class="form-helper-text" />
+        </div>
+        <div>
+          <button type="submit" class="button">Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

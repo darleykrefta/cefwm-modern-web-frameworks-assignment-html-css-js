@@ -1,0 +1,20 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #df3632;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+}

@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-background-image {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  transform: rotateY(180deg);
+  background-image: url(../assets/background.png);
+  background-size: auto;
+}
+
+.form {
+  padding: 20px 40px 20px 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 #553e3c;
+}
+
+.form h2 {
+  color: #553e3c;
+}

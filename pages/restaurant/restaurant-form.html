@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script type="module" src="restaurant-form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.js"></script>
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <link rel="stylesheet" href="../../styles/restaurant.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="menu-header" href="../../index.html">delivery</a>
+      <div class="menu-items">
+        <a class="menu-item" href="./restaurant.html">Restaurants</a>
+        <a class="menu-item-disabled" href="./client.html" disabled>Clients</a>
+        <a class="menu-item-disabled" href="./order.html">Orders</a>
+        <a class="menu-item-disabled" href="./product.html">products</a>
+      </div>
+      <a id="log-out" class="menu-action" href="#">Sign Out</a>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="card">
+          <div class="card-header">
+            <h3 id="card-header">edit restaurant</h3>
+            <button id="btn-delete" type="button" class="button">Delete</button>
+          </div>
+          <div class="card-content">
+            <form class="form" id="form">
+              <div class="input">
+                <label for="uuid">ID</label>
+                <input
+                  name="uuid"
+                  id="form-input-uuid"
+                  class="form-input disable"
+                />
+                <span
+                  id="form-input-helpertext-uuid"
+                  class="form-helper-text"
+                />
+              </div>
+              <div class="input">
+                <label for="name">Name</label>
+                <input name="name" id="form-input-name" class="form-input" />
+                <span
+                  id="form-input-helpertext-name"
+                  class="form-helper-text"
+                />
+              </div>
+              <div class="input">
+                <label for="freight">Freight rate</label>
+                <input
+                  name="freight"
+                  id="form-input-freight"
+                  class="form-input"
+                  type="number"
+                />
+                <span
+                  id="form-input-helpertext-freight"
+                  class="form-helper-text"
+                />
+              </div>
+              <div class="card-actions">
+                <button id="btn-cancel" type="button" class="button-opaque">
+                  Cancel
+                </button>
+                <button type="submit" class="button">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

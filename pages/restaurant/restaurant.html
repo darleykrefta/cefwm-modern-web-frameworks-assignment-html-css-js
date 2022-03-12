@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script type="module" src="restaurant.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.js"></script>
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <link rel="stylesheet" href="../../styles/restaurant.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="menu-header" href="../../index.html">delivery</a>
+      <div class="menu-items">
+        <a class="menu-item" href="./restaurant.html">Restaurants</a>
+        <a class="menu-item-disabled" href="./client.html" disabled>Clients</a>
+        <a class="menu-item-disabled" href="./order.html">Orders</a>
+        <a class="menu-item-disabled" href="./product.html">products</a>
+      </div>
+      <a id="log-out" class="menu-action" href="#">Sign Out</a>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="card">
+          <div class="card-header">
+            <h2>restaurant list</h2>
+            <button id="btn-create" type="button" class="button-opaque">
+              Create
+            </button>
+          </div>
+          <div class="card-content">
+            <table class="custom-table">
+              <tr>
+                <th>Name</th>
+                <th>Freight</th>
+                <th>Actions</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
